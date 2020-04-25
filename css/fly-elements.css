@@ -9,31 +9,53 @@
 
 .my-info__fly-elements_item {
 	background: linear-gradient(45deg, #ff8f5a, #ff2f96);
-	-webkit-background-clip: text;
+	background: -webkit-linear-gradient: (45deg, #ff8f5a, #ff2f96);
+	background: -o-linear-gradient: (45deg, #ff8f5a, #ff2f96);
+
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
     transition: 2s ease;
     opacity: 0;
+    color: #fa0b8d;
+    top: 0;
+	left: 0;
 }
 
 
 
 .item-1.active {
-	transform: translate(-575px, -52px) rotate(29deg) rotate(1turn);
+	transform: rotate(29deg) rotate(1turn);
+	top:-52px;
+	left:-575px;
 }
 .item-2.active {
-	transform: translate(81px, -19px) rotate(-15deg) rotate(-1turn);
+	transform: rotate(-15deg) rotate(-1turn);
+	top:-19px;
+	left: 81px;
     font-size: 32px;
 }
 .item-3.active {
-	transform: translate(-461px, 173px) rotate(18deg) rotate(1turn);
+	transform: rotate(18deg) rotate(1turn);
+	top: 173px;
+	left: -461px;
 	font-size: 60px;
 }
 .item-4.active {
-	transform: translate(244px, 355px) rotate(20deg) rotate(-1turn);
+	transform: rotate(20deg) rotate(-1turn);
+	top:355px;
+	left: 244px;
     font-size: 39px;
 }
 .item-5.active {
-	transform: translate(-332px, 481px) rotate(-22deg) rotate(1turn);
+	transform: rotate(-22deg) rotate(1turn);
+	top: 481px;
+	left: -332px;
 	font-size: 42px;
 }
 
@@ -56,25 +78,38 @@
 .fly-elements__footer_item {
 	transition: 2s ease;
 	opacity: 0;
+	bottom: 0;
+    left: 0;
+
 }
 
 .fly-elements__footer_item.item-1.active {
-	transform: translate(-608px, -113px) rotate(29deg) rotate(1turn);
+	transform: rotate(29deg) rotate(1turn);
+	top: -113px;
+	left: -608px;
 }
 .fly-elements__footer_item.item-2.active {
-	transform: translate(686px, 130px) rotate(22deg) rotate(-1turn);
+	transform: rotate(22deg) rotate(-1turn);
+	top: 130px;
+	left: 686px;
     font-size: 37px;
 }
 .fly-elements__footer_item.item-3.active {
-	transform: translate(-494px, 72px) rotate(18deg) rotate(1turn);
+	transform: rotate(18deg) rotate(1turn);
+	top: 72px;
+	left: -494px;
 	font-size: 60px;
 }
 .fly-elements__footer_item.item-4.active {
-	transform: translate(921px, -97px) rotate(-20deg)  rotate(-1turn);
+	transform: rotate(-20deg)  rotate(-1turn);
+	top: -97px;
+	left: 921px;
     font-size: 39px;
 }
 .fly-elements__footer_item.item-5.active {
-	transform: translate(1030px, 85px) rotate(-17deg) rotate(1turn);
+	transform: rotate(-17deg) rotate(1turn);
+	top: 85px;
+	left: 1030px;
     font-size: 47px;
 }
 
@@ -85,28 +120,40 @@
 
 @media (max-width: 1805px) {
 	.fly-elements__footer_item.item-2.active {
-   		transform: translate(186px, 130px) rotate(22deg) rotate(-1turn);
+   		transform: rotate(22deg) rotate(-1turn);
+   		top: 130px;
+		left: 186px;
 	}
 	.fly-elements__footer_item.item-4.active {
-    	transform: translate(107px, -145px) rotate(-20deg) rotate(-1turn);
+    	transform: rotate(-20deg) rotate(-1turn);
+    	top: -145px;
+		left: 107px;
 	}
 	.fly-elements__footer_item.item-5.active {
-    	transform: translate(430px, 85px) rotate(-17deg) rotate(1turn);
+    	transform: rotate(-17deg) rotate(1turn);
+    	top: 85px;
+		left: 430px;
 	}
 }
 
 @media (max-width: 1212px) {
 	.item-4.active {
-    	transform: translate(-240px, 355px) rotate(20deg) rotate(-1turn);
+    	transform: rotate(20deg) rotate(-1turn);
+    	top: 355px;
+		left: -240px;
 	}
 	.fly-elements__footer_item.item-2.active {
-    	transform: translate(86px, 130px) rotate(22deg) rotate(-1turn);
+    	transform: rotate(22deg) rotate(-1turn);
+    	top: 130px;
+		left: 86px;
 	}
 	.fly-elements__footer_item.item-3.active {
     	display: none;
 	}
 	.fly-elements__footer_item.item-4.active {
-    	transform: translate(107px, -145px) rotate(-20deg) rotate(-1turn);
+    	transform: rotate(-20deg) rotate(-1turn);
+    	top: -145px;
+		left: 107px;
 	}
 	.fly-elements__footer_item.item-5.active {
     	display: none;
@@ -116,39 +163,57 @@
 
 @media (max-width: 1024px) {
 	.item-1.active {
-    	transform: translate(-627px, -30px) rotate(29deg) rotate(1turn);
+    	transform: rotate(29deg) rotate(1turn);
+    	top: -30px;
+		left: -627px;
 	}
 	.item-2.active {
-	    transform: translate(178px, -35px) rotate(-15deg) rotate(-1turn);
+	    transform: rotate(-15deg) rotate(-1turn);
+	    top: -35px;
+		left: 178px;
 	    font-size: 32px;
 	}
 	.item-3.active {
-	    transform: translate(-650px, 440px) rotate(18deg) rotate(1turn);
+	    transform: rotate(18deg) rotate(1turn);
+	    top: 440px;
+		left: -650px;
 	    font-size: 60px;
 	}
 	.item-4.active {
-    	transform: translate(-300px, 52px) rotate(20deg) rotate(-1turn);
+    	transform: rotate(20deg) rotate(-1turn);
+    	top: 52px;
+		left: -300px;
 	}
 	.item-5.active {
-	    transform: translate(-348px, 397px) rotate(-22deg) rotate(1turn);
+	    transform: rotate(-22deg) rotate(1turn);
+	    top: 397px;
+		left: -348px;
 	    font-size: 42px;
 	}
 	.fly-elements__footer_item.item-1.active {
-	    transform: translate(-582px, -152px) rotate(29deg) rotate(1turn);
+	    transform: rotate(29deg) rotate(1turn);
+	    top: -152px;
+		left: -582px;
 	    font-size: 32px;
 	}
 	.fly-elements__footer_item.item-2.active {
-	    transform: translate(-228px, 131px) rotate(22deg) rotate(-1turn);
+	    transform: rotate(22deg) rotate(-1turn);
+	    top: 131px;
+		left: -228px;
 	    font-size: 26px;
 	}
 	.fly-elements__footer_item.item-4.active {
-    	transform: translate(136px, 112px) rotate(-20deg) rotate(-1turn);
+    	transform: rotate(-20deg) rotate(-1turn);
+    	top: 112px;
+		left: 136px;
 	}
 }
 
 @media (max-width: 978px) {
 	.item-2.active {
-	    transform: translate(-478px, -35px) rotate(-15deg) rotate(-1turn);
+	    transform: rotate(-15deg) rotate(-1turn);
+	    top: -35px;
+		left: -478px;
 	    font-size: 32px;
 	}
 	.fly-elements__footer_item.item-4.active {
@@ -160,21 +225,31 @@
     	left: 106px;
 	}
 	.item-1.active {
-    	transform: translate(-27px, -30px) rotate(29deg) rotate(1turn);
+    	transform: rotate(29deg) rotate(1turn);
+    	top: -30px;
+		left: -27px;
 	}
 	.item-2.active {
-	    transform: translate(378px, -35px) rotate(-15deg) rotate(-1turn);
+	    transform: rotate(-15deg) rotate(-1turn);
+	    top: -35px;
+		left: 378px;
 	    font-size: 32px;
 	}
 	.item-3.active {
-	    transform: translate(-50px, 440px) rotate(18deg) rotate(1turn);
+	    transform: rotate(18deg) rotate(1turn);
+	    top: 440px;
+		left: -50px;
 	    font-size: 60px;
 	}
 	.item-4.active {
-   	 transform: translate(300px, 52px) rotate(20deg) rotate(-1turn);
+	   	transform: rotate(20deg) rotate(-1turn);
+	   	top: 52px;
+		left: 300px;
 	}
 	.item-5.active {
-	    transform: translate(348px, 397px) rotate(-22deg) rotate(1turn);
+	    transform: rotate(-22deg) rotate(1turn);
+	    top: 397px;
+		left: 348px;
 	    font-size: 42px;
 	}
 
@@ -197,37 +272,53 @@
 
 @media (max-width: 530px) {
 	.item-1.active {
-    	transform: translate(-27px, -30px) rotate(29deg) rotate(1turn);
+    	transform: rotate(29deg) rotate(1turn);
+    	top: -30px;
+		left: -27px;
 	}
 	.item-3.active {
-	    transform: translate(-50px, 343px) rotate(18deg) rotate(1turn);
+	    transform: rotate(18deg) rotate(1turn);
+	    top: 343px;
+		left: -50px;
 	    font-size: 60px;
 	}
 	.item-4.active {
-   	 	transform: translate(117px, -95px) rotate(20deg) rotate(-1turn);
+   	 	transform: rotate(20deg) rotate(-1turn);
+   	 	top: -95px;
+		left: 117px;
    	 	font-size: 24px;
 	}
 	.item-5.active {
-	    transform: translate(-66px, 98px) rotate(-22deg) rotate(1turn);
+	    transform: rotate(-22deg) rotate(1turn);
+	    top: 98px;
+		left: -66px;
 	    font-size: 32px;
 	}
 }
 
 @media (max-width: 530px) {
 	.item-1.active {
-	    transform: translate(-56px, -62px) rotate(29deg) rotate(1turn);
+	    transform: rotate(29deg) rotate(1turn);
+	    top: -62px;
+		left: -56px;
 	    font-size: 24px;
 	}
 	.item-3.active {
-	    transform: translate(-70px, 40px) rotate(18deg) rotate(1turn);
+	    transform: rotate(18deg) rotate(1turn);
+	    top: 40px;
+		left: -70px;
 	    font-size: 31px;
 	}
 	.item-4.active {
-	    transform: translate(139px, -17px) rotate(20deg) rotate(-1turn);
+	    transform: rotate(20deg) rotate(-1turn);
+	    top: -17px;
+		left: 139px;
 	    font-size: 16px;
 	}
 	.item-5.active {
-	    transform: translate(66px, -82px) rotate(-33deg) rotate(1turn);
+	    transform: rotate(-33deg) rotate(1turn);
+	    top: -82px;
+		left: 66px;
 	    font-size: 20px;
 	}
 }
