@@ -1,42 +1,4 @@
 
-$('#phone').inputmask('+7(999)-999-99-99');
-
-
-
-	
-$('.popup__form').validate({
-	rules: {
-		email: {
-			required: true,
-			email: true,
-			minlength: 1
-		},
-		name: {
-			required: true,
-			minlength: 1
-		}
-	},
-	messages: {
-		required: "Поле 'Email' обязательно к заполнению",
- 		email: "Необходим формат адреса email" 
-	}
-	
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var modal = $('.overlay')[0];
 	callOrderBtn = $('.call-order');
@@ -87,7 +49,8 @@ window.onclick = function (event) {
 
 	function send(e){
 		let name = $('#name').val(),
-			text = $('#phone').val();
+			text = $('#phone').val(),
+			email = $('#email').val();
 
 		e.preventDefault();
 
@@ -99,7 +62,7 @@ window.onclick = function (event) {
 
 			name = $('#name').val('');
 			text = $('#phone').val('');
-			text = $('#email').val('');
+			email = $('#email').val('');
 
 			$('.wrapper__popup_sended').show();
 
@@ -125,5 +88,26 @@ var btnCloseOk = $('.close-btn-ok')[0];
 		};
 
 
+
+$('#phone').inputmask('+7(999)-999-99-99');
+	
+$('.popup__form').validate({
+	rules: {
+		email: {
+			required: true,
+			email: true,
+			minlength: 1
+		},
+		name: {
+			required: true,
+			minlength: 1
+		}
+	},
+	messages: {
+		required: "Поле 'Email' обязательно к заполнению",
+ 		email: "Необходим формат адреса email" 
+	}
+	
+});
 
 
