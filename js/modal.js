@@ -6,27 +6,23 @@ var modal = $('.overlay')[0];
 	btnClose = $('.popup__close_btn')[0];
 
 
-
-
-for (var i = 0; i < callOrderBtn.length; i++) {
-  callOrderBtn[i].onclick = function(e){
+  callOrderBtn.click(function(e){
 	e.preventDefault();
 	$('.overlay').css('display', 'inline-block'); //Включает модальное окно
 	$('.blur').css('filter','blur(3px)'); //Включаем размытие фона
 	$(document.body).css('overflow', 'hidden'); //Выключаем скролл для body
-	$('#email').css('display', 'none'); // Скрывает поле email
-  };
-}
+	$('#email').hide(); // Скрывает поле email
+  });
 
-for (var i = 0; i < knowMoreBtn.length; i++) {
-  knowMoreBtn[i].onclick = function(e){
+
+  knowMoreBtn.click(function(e){
   	e.preventDefault();
 	$('.overlay').css('display', 'inline-block'); //Включает модальное окно
 	$('.blur').css('filter','blur(3px)'); //Включаем размытие фона
 	$(document.body).css('overflow', 'hidden'); //Выключаем скролл для body
-	$('#email').css('display', 'block'); //Показывает поле email
-  };
-}
+	$('#email').show(); //Показывает поле email
+  });
+
 
 
 btnClose.onclick = function () {
@@ -66,7 +62,25 @@ window.onclick = function (event) {
 
 			$('.wrapper__popup_sended').show();
 
-			
+			$('.popup__form').validate({
+				rules: {
+					email: {
+						required: true,
+						email: true,
+						minlength: 1
+					},
+					name: {
+						required: true,
+						minlength: 1
+					}
+				},
+				messages: {
+					required: "Поле 'Email' обязательно к заполнению",
+			 		email: "Необходим формат адреса email" 
+				}
+				
+			});
+
 		} else{
 			$('#name').addClass('error');
 			$('#phone').addClass('error');
@@ -91,23 +105,23 @@ var btnCloseOk = $('.close-btn-ok')[0];
 
 $('#phone').inputmask('+7(999)-999-99-99');
 	
-$('.popup__form').validate({
-	rules: {
-		email: {
-			required: true,
-			email: true,
-			minlength: 1
-		},
-		name: {
-			required: true,
-			minlength: 1
-		}
-	},
-	messages: {
-		required: "Поле 'Email' обязательно к заполнению",
- 		email: "Необходим формат адреса email" 
-	}
+// $('.popup__form').validate({
+// 	rules: {
+// 		email: {
+// 			required: true,
+// 			email: true,
+// 			minlength: 1
+// 		},
+// 		name: {
+// 			required: true,
+// 			minlength: 1
+// 		}
+// 	},
+// 	messages: {
+// 		required: "Поле 'Email' обязательно к заполнению",
+//  		email: "Необходим формат адреса email" 
+// 	}
 	
-});
+// });
 
 
