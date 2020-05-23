@@ -1,37 +1,34 @@
-
-
 var modal = $('.overlay')[0];
 	callOrderBtn = $('.call-order');
-	knowMoreBtn = $('.know-more-btn');
 	btnClose = $('.popup__close_btn')[0];
+	sendBtb = $('.popup__send-btn');
+	knowMoreBtn = $('.know-more-btn');
 
-
-  callOrderBtn.click(function(e){
+callOrderBtn.click(function(e){
 	e.preventDefault();
 	$('.overlay').css('display', 'inline-block'); //Включает модальное окно
 	$('.blur').css('filter','blur(3px)'); //Включаем размытие фона
 	$(document.body).css('overflow', 'hidden'); //Выключаем скролл для body
-	$('#email').hide(); // Скрывает поле email
+	$('.popup__form_more').hide(); //Скрывает форму в инпутом емайл
+	$('.popup__form_call').show(); //Показывает форму без инпута емайл
   });
 
 
-  knowMoreBtn.click(function(e){
+knowMoreBtn.click(function(e){
   	e.preventDefault();
 	$('.overlay').css('display', 'inline-block'); //Включает модальное окно
 	$('.blur').css('filter','blur(3px)'); //Включаем размытие фона
 	$(document.body).css('overflow', 'hidden'); //Выключаем скролл для body
-	$('#email').show(); //Показывает поле email
+	$('.popup__form_more').show(); //Показывает форму в инпутом емайл
+	$('.popup__form_call').hide(); //Скрывает форму без инпута емайл
   });
-
 
 
 btnClose.onclick = function () {
 	$('.overlay').css('display', 'none'); //Выключает модальное окно по нажатию на кнопку Х
 	$('.blur').css('filter','blur(0)'); //Выключаем размытие фона
 	$(document.body).css('overflow', 'visible'); //Включаем скролл для body
-
 };
-
 
 window.onclick = function (event) {
 	if (event.target == modal) {
@@ -41,55 +38,6 @@ window.onclick = function (event) {
 		$('.wrapper__popup_sended').hide(); //Скрывает окно сообщения отправки
 	}
 };
-
-
-	function send(e){
-		let name = $('#name').val(),
-			text = $('#phone').val(),
-			email = $('#email').val();
-
-		e.preventDefault();
-
-		if(name.length !==0 && text.length !==0) {
-
-			$('#name').removeClass('error');
-			$('#phone').removeClass('error');
-			$('#email').removeClass('error');
-
-			name = $('#name').val('');
-			text = $('#phone').val('');
-			email = $('#email').val('');
-
-			$('.wrapper__popup_sended').show();
-
-			$('.popup__form').validate({
-				rules: {
-					email: {
-						required: true,
-						email: true,
-						minlength: 1
-					},
-					name: {
-						required: true,
-						minlength: 1
-					}
-				},
-				messages: {
-					required: "Поле 'Email' обязательно к заполнению",
-			 		email: "Необходим формат адреса email" 
-				}
-				
-			});
-
-		} else{
-			$('#name').addClass('error');
-			$('#phone').addClass('error');
-			$('#email').addClass('error');
-		}
-	}
-
-
-   $('.popup__send-btn').on('click', send);
 
 
 var btnCloseOk = $('.close-btn-ok')[0];
@@ -103,25 +51,67 @@ var btnCloseOk = $('.close-btn-ok')[0];
 
 
 
-$('#phone').inputmask('+7(999)-999-99-99');
-	
-// $('.popup__form').validate({
-// 	rules: {
-// 		email: {
-// 			required: true,
-// 			email: true,
-// 			minlength: 1
-// 		},
-// 		name: {
-// 			required: true,
-// 			minlength: 1
-// 		}
-// 	},
-// 	messages: {
-// 		required: "Поле 'Email' обязательно к заполнению",
-//  		email: "Необходим формат адреса email" 
-// 	}
-	
-// });
 
+$('input[type="tel"]').inputmask({"mask": "+7(999)-999-99-99"});
+
+
+$('.popup__form_call').each(function() { //Валидация формы "Заказать звонок"
+	$(this).validate({
+		// errorPlacement(error, element) {
+		// 	return true;
+		// },
+		focusInvalid: false,
+		rules: {
+			name: {
+				required: true,
+			},
+			phone: {
+				required: true,
+			}
+		},
+		messages: {
+			name: {
+				required: 'Введите ваше имя'
+			},
+			phone: {
+				required: 'Введите номер телефона'
+			}
+		},
+		submitHandler(form) {
+			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена
+			$('.popup__input').val(''); //Очищает поля инпутов после отправки
+		}
+	})
+});
+
+$('.popup__form_more').each(function() { //Валидация формы с емайлом
+	$(this).validate({
+		errorPlacement(error, element) {
+		 	},
+
+		focusInvalid: false,
+		rules: {
+			name: {
+				required: true
+			},
+			phone: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			}
+
+		},
+		// messages: {
+		// 		email: {
+		// 		required: 'Введите Корректный Email'
+		// 	}
+		// },
+		submitHandler(form) {
+			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена
+			$('.popup__input').val(''); //Очищает поля инпутов после отправки
+		}
+	})
+});
 

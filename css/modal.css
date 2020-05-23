@@ -1,7 +1,7 @@
 .overlay {
 	position: fixed;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: rgba(0,0,0,0.8);
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
 .wrapper__popup {
 	position: fixed;
     width: 300px;
-    height: 400px;
+    min-height: 400px;
     top: 50%;
     left: 50%;
     border-radius: 5px;
@@ -84,7 +84,7 @@
 	color: black;
 }
 
-.popup__form {
+.popup__form_call, .popup__form_more {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -97,7 +97,7 @@
 .popup__input {
 	margin-top: 30px;
 	min-width: 250px;
-	height: 40px;
+	min-height: 40px;
 	border-radius: 30px;
 	border: none;
 	background-color: #ebebeb;
@@ -108,7 +108,7 @@
 .popup__send-btn {
 	position: absolute;
 	width: 84%;
-    height: 45px;
+    padding: 10px 20px;
     background-color: transparent;
     cursor: pointer;
     text-align: center;
@@ -139,7 +139,7 @@
 	display: none;
 	position: fixed;
     width: 300px;
-    height: 400px;
+    min-height: 400px;
     top: 50%;
     left: 50%;
     border-radius: 5px;
@@ -152,7 +152,7 @@
 }
 
 .wrapper__popup_sended_items {
-	padding: 80px 40px;
+	padding: 40px 40px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -168,7 +168,8 @@
 }
 
 .close-btn-ok {
-	margin-top: 150px;
+	margin-top: 190px;
+	padding: 5px 20px;
 	background-color: transparent;
     cursor: pointer;
     border: 1px solid #007cde;
@@ -185,3 +186,4 @@
   	background-color: #007cde;
   	transition: 400ms ease;
 }
+

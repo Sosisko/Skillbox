@@ -88,7 +88,7 @@
 	}
 	
 	.swiper-slide {
-		height: 359px;
+		min-height: 359px;
 	}
 	
 	.swiper-slide p {
@@ -135,10 +135,10 @@
 		padding-bottom: 60px;
 	}
 	.swiper-slide {
-		height: 359px;
+		min-height: 359px;
 	}
 	.swiper-slide img {
-		height: auto;
+		min-height: auto;
 	}
 
 	
@@ -183,7 +183,7 @@
 	.my-info {
     	background-position: 7px 60px;
     	background-size: 100% auto;
-    	height: auto;
+    	min-height: auto;
 	}
 	.services {
 		flex-direction: column;
@@ -193,7 +193,7 @@
         position: static;
         max-width: 57%;
     	margin: 0 auto;
-    	height: auto;
+    	min-height: auto;
     	line-height: 0;
 	}
 	.wrapper-two {
@@ -212,7 +212,7 @@
 		font-size: 16px;
 	}
 	.my-info, .my-info__portriet {
-		height: auto;
+		min-height: auto;
 	}
 	.wrapper-two {
     	width: 580px;
@@ -249,7 +249,7 @@
 	.burger span::before,
 	.burger span::after {
 		width: 24px;
-		height: 3px;
+		min-height: 3px;
 		margin-top: -1px;
 	}
 
@@ -262,7 +262,7 @@
     	transition: 0.1s;
 	}
 	.burger-active span {
-	height: 0;
+	min-height: 0;
 	}
 
 	.burger-active span:before {
@@ -310,7 +310,7 @@
 	.my-info {
 		background-position: -41px 53px;
 		background-size: 384px 297px;
-		height: 352px;
+		min-height: 352px;
 	}
 	.my-info__portriet {
 		position: absolute;
@@ -374,7 +374,7 @@
     }
     .swiper-pagination-bullet {
 	    width: 10px;
-	    height: 10px;
+	    min-height: 10px;
 	}
 	.swiper-container {
 		padding-bottom: 0;
@@ -383,7 +383,7 @@
     margin: 0 8px;
 	}
 	.footer-banner {
-		height: 434px;
+		min-height: 434px;
 	}
 	.footer-banner h3 {
 		font-size: 28px;
@@ -419,7 +419,7 @@
     	margin-top: -8px;
     }
     .social button {
-    	height: 55px;
+    	min-height: 55px;
     	width: 280px;
     	margin-top: 31px;
     }

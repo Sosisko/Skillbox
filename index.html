@@ -185,6 +185,8 @@
 		</footer>
 	</main>
 </div>
+
+
 	<div class="overlay">	
 		<div class="wrapper__popup">
             <div class ="popup" >
@@ -192,14 +194,20 @@
                     <button class="popup__close_btn">×</button>
                     <p>Заказать звонок</p>
                 </div>
-                <form action="" class="popup__form">
+				<form action="" class="popup__form_call">
+                        <input class="popup__input" id="name" type="text" placeholder="Ваше имя" name="name">
+                        <input class="popup__input" id="phone" type="tel" placeholder="Номер телефона"name="phone">
+                         <button type="submit" class="popup__send-btn">Отправить</button>
+                </form>
+                <form action="" class="popup__form_more">
                         <input class="popup__input" id="name" type="text" placeholder="Ваше имя" name="name">
                         <input class="popup__input" id="phone" type="tel" placeholder="Номер телефона" name="phone">
                         <input class="popup__input" id="email" type="email" required placeholder="Электронная почта" name="email">
-                        <button class="popup__send-btn">Отправить</button>
+                        <button type="submit" class="popup__send-btn">Отправить</button>
                 </form>
             </div>
         </div>
+
         <div class="wrapper__popup_sended">
 			<div class="wrapper__popup_sended_items">
 	        	<p>Благодарим вас за обращения, скоро наш менеджер свяжется с вами!</p>
@@ -220,3 +228,5 @@
 <script src="js/modal.js"></script>
 </body>
 </html>
+
+

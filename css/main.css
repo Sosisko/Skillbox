@@ -30,7 +30,7 @@
 .burger {
 	display: block;
 	width: 46px;
-	height: 33px;
+	min-height: 33px;
 	background-color: #fff;
 	position: relative;
 }
@@ -41,7 +41,7 @@
 	position: absolute;
 	top: 50%;
 	width: 46px;
-	height: 6px;
+	min-height: 6px;
 	margin-top: -2px;
 }
 .burger span::before,
@@ -66,7 +66,7 @@
 }
 
 .burger-active span {
-	height: 0;
+	min-height: 0;
 }
 
 .burger-active span:before {
@@ -105,8 +105,7 @@
 }
 
 .header-contacts__call-order {
-	width: 207px;
-	height: 45px;
+	padding: 13px 40px;
 	background-color: transparent;
 	cursor: pointer;
 	text-align:center;
@@ -129,7 +128,7 @@
 	vertical-align: middle;
     background: url(../img/call-order-icon.png) no-repeat;
     border: 0;
-    height: 26px;
+    min-height: 26px;
     width: 27px;
     cursor: pointer;
     display: none;
@@ -137,13 +136,14 @@
 
 .my-info {
 	margin-top: 63px;
-	height: 630px;
+	min-height: 630px;
 	background-image: url('../img/Ellipse_1.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-color: #FBFBFB;
 	background-size: auto 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .about {
@@ -156,6 +156,8 @@
 	color: #1f1f24;
 	font-weight: 900;
 	line-height: normal;
+
+
 }
 
 .about__profession {
@@ -167,7 +169,7 @@
 .know-more-btn {
 	display: block;
     max-width: 270px;
-    padding: 18px 0;
+    padding: 18px 10px;
     background-color: #ff4e2e;
     cursor: pointer;
     color: #fff;
@@ -186,14 +188,13 @@
 	position: absolute;
 	top: -6px;
     right: 296px;
-	height: 636px;
-	overflow: hidden;
+	min-height: 636px;
 	max-width: 435px;
 }
 
 
 .wrapper-two {
-	margin-top: 325px;
+	margin-top: 318px;
 }
 
 .wrapper-two h2, .wrapper-three h2 {
@@ -202,10 +203,16 @@
 	color: #262626;
 }
 
-.wrapper-two a, .wrapper-three a {
+.wrapper-two a {
 	margin: 0 auto;
-	margin-top: 84px;
+	margin-top: 90px;
 }
+ 
+.wrapper-three a {
+	margin: 0 auto;
+	margin-top: 96px;
+}
+
 
 .services {
 	margin-top: 81px;
@@ -237,7 +244,7 @@
 
 .footer-banner {
 	width: 100%;
-	height: 364px;
+	min-height: 364px;
 	background: linear-gradient(to top right, #ff8f5a, #ff2f96);
 }
 
@@ -280,7 +287,7 @@
 }
 
 .footer__contacts ul li:first-child {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .tel-link-footer {
@@ -323,8 +330,7 @@
 }
 
 .social__call-order {
-	width: 249px;
-	height: 45px;
+	padding: 13px 60px;
 	background-color: transparent;
 	cursor: pointer;
 	text-align:center;
@@ -354,7 +360,7 @@
 	display: inline-block;
 	background: url(../img/sprite_social.png) no-repeat;
     width: 50px;
-    height: 40px;
+    min-height: 40px;
 
     transition: 300ms; 
    	opacity: 0.6;
@@ -394,4 +400,3 @@ a.instagramm {
 	padding: 26px;
 	color: #fff;
 }
-
