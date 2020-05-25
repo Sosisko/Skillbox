@@ -132,12 +132,18 @@
 .active-blur {
 	 	filter: blur(3px);
 }
-.error {
-	
-	font-size: 14px;
 
+.error {
+	border: 1px solid red;
 }
 
+
+#name-error, #phone-error {
+	color: red;
+	font-size: 14px;
+	border: none;
+	padding-left: 20px;
+}
 
 
 .wrapper__popup_sended {

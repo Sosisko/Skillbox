@@ -84,10 +84,12 @@ $('.popup__form_call').each(function() { //Валидация формы "Зак
 	})
 });
 
+
+
 $('.popup__form_more').each(function() { //Валидация формы с емайлом
 	$(this).validate({
 		errorPlacement(error, element) {
-		 	},
+			},
 
 		focusInvalid: false,
 		rules: {
