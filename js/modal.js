@@ -75,7 +75,7 @@ $('.popup__form_call').each(function() { //Валидация формы "Зак
 			},
 			phone: {
 				required: 'Введите номер телефона'
-			}
+			},
 		},
 		submitHandler(form) {
 			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена

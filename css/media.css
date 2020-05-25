@@ -199,6 +199,11 @@
 	.wrapper-two {
 		margin-top: 165px;	
 	}
+
+	.social {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -262,7 +267,7 @@
     	transition: 0.1s;
 	}
 	.burger-active span {
-	min-height: 0;
+		min-height: 0;
 	}
 
 	.burger-active span:before {
@@ -275,6 +280,10 @@
 	}
 	.footer__contacts {
     	padding-left: 0;
+	}
+	.footer__links, .footer__contacts {
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 
@@ -305,7 +314,7 @@
 
 @media (max-width: 320px) {
 	.header {
-   		margin-top: 22px;
+   		padding-top: 22px;
 	}
 	.my-info {
 		background-position: -41px 53px;
@@ -399,9 +408,16 @@
 		margin-top: 46px;
 		margin-bottom: 43px;
 	}
+
+	.footer__links, .footer__contacts {
+    	margin: 0;
+    	text-align: left;
+	}
+
 	.footer__links {
 		margin-bottom: 22px;
 	}
+	
 	.footer__links li {
     	font-size: 15px;
     	margin-bottom: 13px;

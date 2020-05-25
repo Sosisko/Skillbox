@@ -95,6 +95,7 @@
 }
 
 .popup__input {
+	position: relative;
 	margin-top: 30px;
 	min-width: 250px;
 	min-height: 40px;
@@ -132,8 +133,12 @@
 	 	filter: blur(3px);
 }
 .error {
-	border: 1px solid red;
+	
+	font-size: 14px;
+
 }
+
+
 
 .wrapper__popup_sended {
 	display: none;

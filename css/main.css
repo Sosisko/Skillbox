@@ -1,6 +1,8 @@
 
 .header {
-	margin-top: 29px;
+	padding-top: 29px;
+	padding-bottom: 63px;
+	background-color: #fbfbfb;
 }
 
 .nav__menu {
@@ -135,7 +137,6 @@
 }
 
 .my-info {
-	margin-top: 63px;
 	min-height: 630px;
 	background-image: url('../img/Ellipse_1.png');
 	background-repeat: no-repeat;
@@ -287,7 +288,7 @@
 }
 
 .footer__contacts ul li:first-child {
-	margin-bottom: 30px;
+	margin-bottom: 22px;
 }
 
 .tel-link-footer {
