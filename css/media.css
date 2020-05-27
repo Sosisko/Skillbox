@@ -27,6 +27,7 @@
 	.swiper-container-horizontal>.swiper-pagination-bullets {
 		display: block;
 		position: absolute;
+		bottom: -3px;
 	}
 
 }
@@ -63,7 +64,8 @@
 		flex-wrap: wrap;
 	}
 	.wrapper-two {
-		width: 727px;	
+		width: 727px;
+		margin-top: 306px;	
 	}
 	.services__service {
 		margin-bottom: 80px;
@@ -93,10 +95,16 @@
 	.swiper-slide p {
 		font-size: 25px;
 		font-weight: 500;
-		padding-top: 15px;
+		padding-top: 12px;
 	}
+
+	.swiper-slide img {
+		width: 460px;
+		height: auto;
+	}
+
 	.swiper-container {
-   		padding-bottom: 162px;
+   		padding-bottom: 120px;
 	}
 	.nav-adv__menu {
 		margin-top: 30px;
@@ -368,7 +376,7 @@
 	
 	.wrapper-three {
     	margin-top: 90px;
-    	padding-bottom: 50px;
+    	padding-bottom: 52px;
 	}
 
 	.wrapper-three a {
@@ -379,6 +387,9 @@
 	}
 	.swiper-slide p {
     	font-size: 16px;
+    }
+    .swiper-slide img {
+    	min-height: 248px;
     }
     .swiper-pagination-bullet {
 	    width: 10px;
@@ -393,9 +404,9 @@
 	.footer-banner {
 		min-height: 434px;
 	}
-	.footer-banner h3 {
+	.footer-banner h3, .footer-banner p {
 		font-size: 28px;
-		padding-top: 43px;
+    	padding: 43px 20px 0 20px;
 	}
 	.footer-banner p {
 		font-size: 14px;
@@ -436,7 +447,7 @@
     .social button {
     	min-height: 55px;
     	width: 280px;
-    	margin-top: 31px;
+    	margin-top: 30px;
     }
 
     .social__links {
@@ -450,6 +461,9 @@
 	}
 	.about {
 		margin-top: -7px;
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets {
+		bottom: 12px;
 	}
 }
 
