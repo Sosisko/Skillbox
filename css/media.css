@@ -6,10 +6,9 @@
 
 @media (max-width: 1165px) {
 	.my-info  {
-		background-position: 475px 102px;
+		background-position: 477px 163px;
 	    -webkit-background-size: 31px 60px;
 	    background-size: 827px 531px;
-	    /*background-size: 80% 80%;*/
 	}
 	.my-info__portriet {
 		right: 38px;
@@ -51,7 +50,7 @@
 		display: inline-block;
 	}
 	.about__name-man {
-    	padding-top: 174px;
+    	padding-top: 172px;
 	}
 	.about__profession {
     	padding-top: 20px;
@@ -64,7 +63,7 @@
 		flex-wrap: wrap;
 	}
 	.wrapper-two {
-		width: 700px;	
+		width: 727px;	
 	}
 	.services__service {
 		margin-bottom: 80px;
@@ -74,8 +73,8 @@
 	}
 	.footer-banner h3, .footer-banner p  {
 		width: 100%;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	.social {
     	padding-right: 0;
@@ -97,7 +96,7 @@
 		padding-top: 15px;
 	}
 	.swiper-container {
-   		padding-bottom: 185px;
+   		padding-bottom: 162px;
 	}
 	.nav-adv__menu {
 		margin-top: 30px;
@@ -317,13 +316,13 @@
    		padding-top: 22px;
 	}
 	.my-info {
-		background-position: -41px 53px;
-		background-size: 384px 297px;
-		min-height: 352px;
+		background-position: -44px 119px;
+		background-size: 394px 293px;
+		min-height: 414px;
 	}
 	.my-info__portriet {
 		position: absolute;
-		top: 19px;
+		top: 81px;
 		right: 22px;
 		max-width: 221px;
 	}

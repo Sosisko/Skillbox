@@ -1,6 +1,6 @@
 .my-info__fly-elements {
 	position: absolute;
-	top: 42px;
+	top: 105px;
     left: 706px;
 	display: inline-block;
 	font-size: 47px;
@@ -85,7 +85,7 @@
 
 .fly-elements__footer_item.item-1.active {
 	transform: rotate(29deg) rotate(1turn);
-	top: -113px;
+	top: -120px;
 	left: -620px;
 }
 .fly-elements__footer_item.item-2.active {
@@ -102,7 +102,7 @@
 }
 .fly-elements__footer_item.item-4.active {
 	transform: rotate(-20deg)  rotate(-1turn);
-	top: -97px;
+	top: -100px;
 	left: 928px;
     font-size: 39px;
 }
@@ -252,14 +252,14 @@
 	}
 	.fly-elements__footer_item.item-1.active {
 	    transform: rotate(29deg) rotate(1turn);
-	    top: -152px;
-		left: -582px;
+	    top: -159px;
+		left: -610px;
 	    font-size: 32px;
 	}
 	.fly-elements__footer_item.item-2.active {
 	    transform: rotate(22deg) rotate(-1turn);
-	    top: 131px;
-		left: -228px;
+	    top: 133px;
+		left: -221px;
 	    font-size: 26px;
 	}
 	.fly-elements__footer_item.item-4.active {
