@@ -88,8 +88,8 @@ $('.popup__form_call').each(function() { //Валидация формы "Зак
 
 $('.popup__form_more').each(function() { //Валидация формы с емайлом
 	$(this).validate({
-		errorPlacement(error, element) {
-			},
+		// errorPlacement(error, element) {
+		// 	},
 
 		focusInvalid: false,
 		rules: {
@@ -105,11 +105,17 @@ $('.popup__form_more').each(function() { //Валидация формы с ем
 			}
 
 		},
-		// messages: {
-		// 		email: {
-		// 		required: 'Введите Корректный Email'
-		// 	}
-		// },
+		messages: {
+			name: {
+				required: 'Введите ваше имя'
+			},
+			phone: {
+				required: 'Введите номер телефона'
+			},
+			email: {
+				required: 'Введите Корректный Email'
+			},
+		},
 		submitHandler(form) {
 			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена
 			$('.popup__input').val(''); //Очищает поля инпутов после отправки

@@ -138,13 +138,21 @@
 }
 
 
-#name-error, #phone-error {
+#name-error, #phone-error, #email-error {
+	position: absolute;
+	top: 165px;
 	color: red;
 	font-size: 14px;
 	border: none;
 	padding-left: 20px;
 }
+#phone-error {
+	top: 236px;
+}
 
+#email-error {
+	top: 307px;
+}
 
 .wrapper__popup_sended {
 	display: none;
