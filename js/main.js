@@ -39,3 +39,10 @@ $(function () {
   $('.fly-elements__footer_item').addClass('active');
 
 });
+
+
+
+$('.my-info__fly-elements').hide();
+window.onload = function() {
+    $('.my-info__fly-elements').show();
+  };

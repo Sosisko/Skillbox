@@ -280,6 +280,13 @@
 		display: none;
 }
 
+@media (max-width: 760px) {
+	.item-2.active {
+	    top: 86px;
+	    left: -616px;
+	}
+}
+
 @media (max-width: 740px) {
 	.my-info__fly-elements {
     	left: 106px;
