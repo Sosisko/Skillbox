@@ -35,14 +35,65 @@ $(function () {
 
 });
 
-$(function () {
-  $('.fly-elements__footer_item').addClass('active');
+// $(function () {
+//   $('.fly-elements__footer_item').addClass('active');
 
+// });
+
+
+
+$('.my-info__fly-elements').hide(); //Летающие элементы появляются после загрузки страницы
+window.onload = function() {
+    $('.my-info__fly-elements').show();
+  };
+
+
+$(window).scroll(function() {
+  let height = $(window).scrollTop();
+ /*Если сделали скролл на 1500px задаём новый класс active для летающих элементов.*/
+  if(height > 1500){
+      $('.fly-elements__footer').show();
+      $('.fly-elements__footer_item').addClass('active');
+} else{
+/*Если меньше 1600px удаляем класс active для летающих элементов*/
+      $('.fly-elements__footer').hide();
+      $('.fly-elements__footer_item').removeClass('active');
+}
 });
 
 
 
-$('.my-info__fly-elements').hide();
-window.onload = function() {
-    $('.my-info__fly-elements').show();
-  };
+
+
+// $('.fly-elements__footer_item').css('display', 'none');
+
+// jQuery(function(f){
+//     var element = f('.fly-elements__footer_item');
+//     f(window).scroll(function(){
+
+//         element['fade'+ (f(this).scrollTop() > 1568 ? 'In': 'Out')](0);  
+//          $('.fly-elements__footer_item').addClass('active');         
+//     });
+// });
+
+
+// $('.footer-banner h3').click(function () {
+//   alert( 'Текущая прокрутка сверху: ' + window.pageYOffset );
+//   alert( 'Текущая прокрутка слева: ' + window.pageXOffset );
+// });
+
+
+// function scrollTracking() {
+// let wt = $(window).scrollTop();
+// let wh = $(window).height();
+// let et = $('.fly-elements__footer_item').offset().top + 255;
+// let eh = $('.fly-elements__footer_item').outerHeight() + 255;
+// let dh = $(document).height();
+// if (wt + wh >= et || wh + wt === dh || eh + et < wh) {
+// $('.fly-elements__footer_item').addClass('active'); }
+// }
+
+// $(window).on('scroll', () => {
+// scrollTracking()
+// });
+

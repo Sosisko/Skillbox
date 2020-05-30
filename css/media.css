@@ -188,7 +188,7 @@
 	}
 
 	.my-info {
-    	background-position: 7px 60px;
+    	background-position: 7px 120px;
     	background-size: 100% auto;
     	min-height: auto;
 	}
@@ -202,6 +202,7 @@
     	margin: 0 auto;
     	min-height: auto;
     	line-height: 0;
+    	padding-top: 60px;
 	}
 	.wrapper-two {
 		margin-top: 165px;	
