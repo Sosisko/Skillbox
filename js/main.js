@@ -30,22 +30,16 @@ if(window.matchMedia('(max-width: 320px)').matches){
      $('.know-more-btn').removeClass('social__call-order');
 };
 
-$(function () {
-  $('.my-info__fly-elements_item').addClass('active');
-
-});
-
-// $(function () {
-//   $('.fly-elements__footer_item').addClass('active');
-
-// });
 
 
 
 $('.my-info__fly-elements').hide(); //Летающие элементы появляются после загрузки страницы
 window.onload = function() {
     $('.my-info__fly-elements').show();
+    $('.my-info__fly-elements_item').addClass('active');
   };
+
+
 
 
 $(window).scroll(function() {
