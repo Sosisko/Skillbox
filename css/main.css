@@ -190,10 +190,11 @@
 
 .my-info__portriet {
 	position: absolute;
-	top: 42px;
-    right: 246px;
+	top: 55px;
+    right: 293px;
 	min-height: 651px;
 	max-width: 553px;
+	filter: drop-shadow(16px 16px 20px black);
 }
 
 
