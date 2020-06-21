@@ -151,7 +151,7 @@
 }
 
 .about {
-	margin-top: -628px;
+	padding-top: 64px;
 }
 
 .about__name-man {
@@ -165,7 +165,7 @@
 }
 
 .about__profession {
-	padding-top: 11px;
+	padding-top: 14px;
 	font-size: 25px;
 	color: #8993ad;
 }
@@ -199,7 +199,7 @@
 
 
 .wrapper-two {
-	margin-top: 318px;
+	margin-top: 80px;
 }
 
 .wrapper-two h2, .wrapper-three h2 {
