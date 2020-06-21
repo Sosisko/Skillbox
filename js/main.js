@@ -5,7 +5,7 @@
 
 $('.burger').click(function() {
 	$('.burger').toggleClass('close');
-	$('.burger').toggleClass('burger-active')
+	$('.burger').toggleClass('burger-active');
   $('.nav-adv__menu').toggleClass('active');
   	
 });
@@ -43,9 +43,9 @@ window.onload = function() {
 
 
 $(window).scroll(function() {
-  let height = $(window).scrollTop();
+  var heightWindow = $(window).scrollTop();
  /*Если сделали скролл на 1500px задаём новый класс active для летающих элементов.*/
-  if(height > 1500){
+  if(heightWindow > 1500){
       $('.fly-elements__footer').show();
       $('.fly-elements__footer_item').addClass('active');
 } else{

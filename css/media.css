@@ -65,7 +65,6 @@
 	}
 	.wrapper-two {
 		width: 727px;
-		margin-top: 306px;	
 	}
 	.services__service {
 		margin-bottom: 80px;
@@ -132,7 +131,9 @@
 		.nav-adv__menu li:nth-child(1):hover {border-right: 10px solid #f05d22;}
 		.nav-adv__menu li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
 		.nav-adv__menu li:nth-child(3):hover {border-right: 10px solid #fcba30;}
-		
+		.about {
+   		padding-top: 64px;
+	}	
 	}
 }
 

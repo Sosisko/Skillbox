@@ -77,7 +77,7 @@ $('.popup__form_call').each(function() { //Валидация формы "Зак
 				required: 'Введите номер телефона'
 			},
 		},
-		submitHandler(form) {
+		submitHandler: function(form) {
 			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена
 			$('.popup__input').val(''); //Очищает поля инпутов после отправки
 		}
@@ -116,7 +116,7 @@ $('.popup__form_more').each(function() { //Валидация формы с ем
 				required: 'Введите Корректный Email'
 			},
 		},
-		submitHandler(form) {
+		submitHandler: function(form) {
 			$('.wrapper__popup_sended').show(); //Показывает отрисовку, что форма отправлена
 			$('.popup__input').val(''); //Очищает поля инпутов после отправки
 		}
