@@ -151,11 +151,11 @@
 }
 
 .about {
-	padding-top: 64px;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 .about__name-man {
-	padding-top: 147px;
 	font-size: 80px;
 	color: #1f1f24;
 	font-weight: 900;
