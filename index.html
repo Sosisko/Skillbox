@@ -6,16 +6,7 @@
 	<title>Оформление</title>
 	<link rel="preload" as="font" href="fonts/Roboto-Regular.woff2" type="font/woff2" crossorigin>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/swiper-main.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/icofont.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="css/fly-elements.css">
-	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 <div class="blur">	
@@ -49,7 +40,8 @@
 
 	<main>
 		<section class="wrapper-one">
-			<div class="my-info">
+
+			<div class="my-info flex-container">
 				<div class="my-info__fly-elements">
 					<span class="my-info__fly-elements_item item-1">{&nbsp;}</span>
 					<span class="my-info__fly-elements_item item-2">&lt;div&gt;</span>
@@ -57,15 +49,19 @@
 					<span class="my-info__fly-elements_item item-4">&lt;div&gt;</span>
 					<span class="my-info__fly-elements_item item-5">&lt;/&gt;</span>
 				</div>
+		
 				<div class="my-info__portriet">
 					<img  class="photo" src="img/photo_man.png" alt="myPhoto">
 				</div>
-			</div>
-				<div class="about fixed-container">
+
+				<div class="about">
 					<h1 class="about__name-man">Дмитрий Алексеев</h1>
 					<p class="about__profession">Frontend и React-разработчик</p>
 					<a class="know-more-btn" href="#">Узнать больше</a>
 				</div>
+			</div>
+
+				
 		</section>
 		
 
@@ -147,7 +143,7 @@
 		</section>
 		
 		<footer class="footer">
-			<section class="footer__elements fixed-container flex-container">
+			<div class="footer__elements fixed-container flex-container">
 				<nav class="footer__links">
 					<ul>
 						<li><a class="flowing-scroll" href="#wrapper-two">Услуги</a></li>
@@ -158,12 +154,12 @@
 				<div class="footer__contacts">
 					<ul>
 						<li>
-							<i class="icofont-phone" aria-label="icofont-phone"></i>
+							<i class="icofont-phone"></i>
 							<a class="tel-link-footer" href="tel:+7(499)995-77-55">+7 (499) 995-77-55</a>
 						</li>
 
 						<li>
-							<i class="icofont-envelope" aria-label="icofont-envelope"></i>
+							<i class="icofont-envelope"></i>
 							<a class="mail-link-footer" href="mailto:dmitry@alekseev.com">dmitry@alekseev.com</a>
 						</li>
 					</ul>
@@ -178,7 +174,7 @@
 							<a href="https://www.instagram.com/" target="_blank" class="instagramm" aria-label="instagramm"></a>
 					</div>
 				</div>
-			</section>
+			</div>
 			<div class="footer-bar">
 				<p>&#169; Дмитрий Алексеев, 2016 – 2018</p>
 			</div>
@@ -189,22 +185,22 @@
 
 	<div class="overlay">	
 		<div class="wrapper__popup">
-            <div class ="popup" >
+            <div class ="popup">
                 <div class="popup__header">
                     <button class="popup__close_btn">×</button>
                     <p>Заказать звонок</p>
                 </div>
-				<form action="" class="popup__form_call">
+				<form class="popup__form_call">
                         <input class="popup__input" id="name" type="text" placeholder="Ваше имя" name="name">
                         <label for="name"></label>
                         <input class="popup__input" id="phone" type="tel" placeholder="Номер телефона" name="phone">
                         <label for="phone"></label>
-                         <button type="submit" class="popup__send-btn">Отправить</button>
+                        <button type="submit" class="popup__send-btn">Отправить</button>
                 </form>
-                <form action="" class="popup__form_more">
-                        <input class="popup__input" id="name" type="text" placeholder="Ваше имя" name="name">
-                        <input class="popup__input" id="phone" type="tel" placeholder="Номер телефона" name="phone">
-                        <input class="popup__input" id="email" type="email" required placeholder="Электронная почта" name="email">
+                <form class="popup__form_more">
+                        <input class="popup__input" id="nameFormMore" type="text" placeholder="Ваше имя" name="name">
+                        <input class="popup__input" id="phoneFormMore" type="tel" placeholder="Номер телефона" name="phone">
+                        <input class="popup__input" id="emailFormMore" type="email" required placeholder="Электронная почта" name="email">
                         <button type="submit" class="popup__send-btn">Отправить</button>
                 </form>
             </div>
@@ -219,15 +215,12 @@
     </div>
 
 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.inputmask.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 
-
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.inputmask.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/swiper-main.js"></script>
-<script src="js/main.js"></script>
-<script src="js/modal.js"></script>
+	<script src="js/all-main.js"></script>
 
 </body>
 </html>
